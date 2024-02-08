@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= <device-width>, initial-scale=1.0">
+    <title>BeardoMart</title>
+    <style>
+        .loader {
+            height:0.5vh;
+            left:50%;
+            overflow:hidden;
+            position:absolute;
+            top:80%;
+            transform:translate(-50%,-50%);
+            width:60vw;
+            &:before {
+                animation:left-to-right 3s forwards 1 ease-in-out;
+                background-image:linear-gradient(to left, transparent, rgb(0, 0, 0), transparent);
+                content:"";
+                height:5vh;
+                left:0;
+                overflow:visible;
+                position:absolute;
+                right:0;
+                top:0;
+            }
+        }
+
+        @keyframes left-to-right {
+            0% {
+                transform:translateX(-100%);
+            }
+        }
+        body{
+            background: rgb(130,203,116);
+            background: radial-gradient(circle, rgba(130,203,116,1) 0%, rgba(72,164,111,1) 78%);
+        };
+    </style>
+</head>
+<body>
+    <div class="image" style="padding-left: 35%;">
+        <img src="Images/Beardomart_Splashscreen-removebg.png" width="300" height="530" onload="openNewPage()"><br>
+    </div>
+    <div class="loader"></div>
+
+    <script>
+        function openNewPage() {
+            setTimeout(function () {
+                window.location.href = "../Signin_Page/signin_signup.html"; 
+            }, 4000); 
+        }
+    </script>
+</body>
+</html>
+
+<!-- Entire Page Nav bar bg color: rbga(72,164,111,100) -->

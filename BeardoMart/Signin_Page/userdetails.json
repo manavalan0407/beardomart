@@ -1,0 +1,20 @@
+{
+    "userdetails": {
+      "user1": {
+        "name": "testa",
+        "email": "testa@gmail.com",
+        "password": "testa@123"
+      },
+      "user2": {
+        "name": "testb",
+        "email": "testb@gmail.com",
+        "password": "testb@123"
+      },
+      "user3": {
+        "name": "testc",
+        "email": "testc@gmail.com",
+        "password": "testc@123"
+      }
+    }
+  }
+  
